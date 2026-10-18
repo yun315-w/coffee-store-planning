@@ -23,6 +23,14 @@ st.markdown("""
  h2, h3 { font-size: 1.25rem !important; }
  [data-testid="stMetricValue"] { font-variant-numeric: tabular-nums; font-size: 1.85rem; }
  button:focus-visible, input:focus-visible { outline: 2px solid #247266; outline-offset: 3px; }
+ @media (min-width: 641px) and (max-width: 1100px) {
+   [data-testid="stMetricValue"] { font-size: 1rem !important; }
+   [data-testid="stMetricLabel"] p {
+     white-space: normal !important; overflow: visible !important;
+     font-size: 0.75rem !important; line-height: 1.3 !important;
+   }
+   [data-testid="stMetricLabel"] { min-height: 2.6em; }
+ }
  @media (max-width: 640px) {
    .stMainBlockContainer { padding-top: 1.2rem; padding-left: 1rem; padding-right: 1rem; }
    h1 { font-size: 1.6rem !important; }
