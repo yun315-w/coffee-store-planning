@@ -1,0 +1,14 @@
+[project]
+name = "coffee-store-planning"
+version = "0.1.0"
+description = "A focused Streamlit dashboard for coffee-store preparation planning"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+    "altair==6.2.2",
+    "pandas==3.0.5",
+    "streamlit==1.63.0",
+]
+
+[dependency-groups]
+notebook = ["ipykernel>=6,<8", "matplotlib>=3.10,<4"]
